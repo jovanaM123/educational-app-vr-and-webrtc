@@ -1,0 +1,24 @@
+<div style="display: inline-flex;">
+  <div class="meni">
+    <app-glavni-meni></app-glavni-meni>
+  </div>
+  <div class="container">
+    <h3 style="margin-bottom: 50px;">Kursevi</h3>
+    <mat-grid-list cols="2" rowHeight="4:3" >
+       <div class="kursevi" *ngFor="let kurs of kursevi">
+        <mat-grid-tile style="height: 200px;">
+          <mat-card class="mat-elevation-z4" [style.width]="'80%'">
+            <a href="{{kurs.link}}">
+              <img style="height: 150px; width: 150px;" src="{{kurs.image_url}}" class="card-img-top">
+            </a>
+            <mat-card-content>
+              <p id="tekst">
+                {{kurs.title}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </div>
+</div>

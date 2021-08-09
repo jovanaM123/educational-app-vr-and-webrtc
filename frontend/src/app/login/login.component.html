@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        LOGOVANJE
+    </thead>
+    <tr>
+        <td> <input type="text" placeholder="Korisničko ime" [(ngModel)]="username"> </td>
+    </tr>
+    <tr>
+        <td> <input type="password" placeholder="Šifra" [(ngModel)]="password"> </td>
+    </tr>
+    <tr>
+        <td> <button class="btn btn-success" (click)="login()"> ULOGUJTE SE </button> </td>
+    </tr>
+    <tr>
+            <td> Nemate nalog? <a routerLink='/registracija'> Registrujte se</a></td>
+    </tr>
+    <span style="color: brown;">
+        {{ message }}
+    </span>
+    <br/>
+</table>

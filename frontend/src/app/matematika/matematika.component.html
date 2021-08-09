@@ -1,0 +1,44 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+        <mat-grid-list cols="2" rowHeight="2:1">
+         <mat-grid-tile>
+             <mat-card class="example-card">
+              <video id="my_video_1" class="video-js vjs-default-skin" width="268px" height="140px" controls preload="none"
+              poster='http://video-js.zencoder.com/oceans-clip.jpg'
+              data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+              <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+              <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+            </video>
+                <mat-card-content>
+                  <p style="font-weight: bold;">
+                    1. Geometrijski oblici
+                  </p>
+                </mat-card-content>
+              </mat-card>
+         </mat-grid-tile>
+              <mat-grid-tile>
+              <mat-card class="example-card">
+                <img src="../../assets/slike/mat.png">
+                <mat-card-content>
+                  <p style="font-weight: bold;">
+                    2. Sabiranje brojeva
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+              <mat-grid-tile>
+              <mat-card class="example-card">
+                <img src="../../assets/slike/mat.png">
+                <mat-card-content>
+                  <p style="font-weight: bold;">
+                    3. Pitagorina teorema
+                  </p>
+                </mat-card-content>
+              </mat-card>
+              </mat-grid-tile>
+          </mat-grid-list>
+         </div>
+ </div>

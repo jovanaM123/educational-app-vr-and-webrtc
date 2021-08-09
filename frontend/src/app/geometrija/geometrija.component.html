@@ -1,0 +1,16 @@
+<a-scene>
+  <a-entity
+  text="value: GEOMETRIJSKI OBLICI: TROUGAO, KOCKA, LOPTA I VALJAK; color: black"
+  position="0 3.5 -3"
+  scale="2 3 5"></a-entity>
+  <a-entity  position="-4 2.75 -3" geometry="primitive: triangle" material="side: double"
+  animation="property: object3D.position.x; to: -3; dir: alternate; dur: 2000; loop: true;"></a-entity>
+  <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000">
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+</a-entity>
+    <a-box position="-3 0.75 -3" rotation="0 0 0" color="#4CC3D9"
+    animation="property: rotation; to: 0 360 360; loop: true; dur: 10000"></a-box>
+    <a-cylinder position="3 0.75 -3" radius="0.5" height="1.0" color="#FFC65D"
+    animation="property: rotation; to: 0 0 360; loop: true; dur: 10000"></a-cylinder>
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>

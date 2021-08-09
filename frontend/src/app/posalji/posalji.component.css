@@ -1,0 +1,50 @@
+table{
+    margin: 50px auto;
+    width: 40%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    /*background: #73AD21;*/
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+td input{
+    width: 80%;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 0.1px solid ghostwhite;
+}
+
+thead {
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+td .btn {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+td a {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+td a:hover {
+    color: gold;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    table{
+        margin: 30px auto;
+        width: 90% !important;
+    }
+
+}

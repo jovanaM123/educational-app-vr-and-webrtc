@@ -1,0 +1,29 @@
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100vh;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    margin-left: 370px;
+}
+
+.example-card{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        margin: auto;
+        width: 90% !important;
+    }
+    img {
+        width: 60%;
+        height: 80%;
+    }
+
+}

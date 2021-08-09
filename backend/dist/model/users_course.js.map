@@ -1,0 +1,1 @@
+{"version":3,"file":"users_course.js","sourceRoot":"","sources":["../../src/model/users_course.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAEhC,MAAM,MAAM,GAAG,kBAAQ,CAAC,MAAM,CAAC;AAE/B,IAAI,WAAW,GAAG,IAAI,MAAM,CAAC;IACzB,cAAc,EAAE;QACZ,IAAI,EAAE,MAAM;KACf;IACD,OAAO,EAAE,CAAC,MAAM,CAAC;CACpB,CAAC,CAAC;AAEH,kBAAe,kBAAQ,CAAC,KAAK,CAAC,aAAa,EAAE,WAAW,CAAC,CAAC"}

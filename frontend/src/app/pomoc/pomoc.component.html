@@ -1,0 +1,43 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+        <mat-accordion class="kutije">
+    
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Matematika
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a routerLink="/geometrija"> Geometrijske figure </a>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+                
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Biologija
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                    <a routerLink="/covid"> Virus - covid-19 </a>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+                
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Geografija
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                    <a routerLink="/njujork"> Nju Jork </a>
+            </mat-expansion-panel>
+
+          </mat-accordion>
+          
+    </div>
+ </div>

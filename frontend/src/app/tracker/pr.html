@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML >
+<html>
+   <head>
+      <title>GazeCloudAPI</title>
+   <style type="text/css">
+         body {
+         overflow: hidden;
+         }
+
+         #aa img{
+            width: 500px !important;
+            height: 500px !important;
+            margin-left: 400px;
+         }
+
+         #aa{
+            margin: 95px auto;
+            align-items: center;
+            justify-content: center;
+         }
+
+</style>
+
+ <script src="https://api.gazerecorder.com/GazeCloudAPI.js" ></script>
+ <script src="https://api.gazerecorder.com/heatmapLive.js" > </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+ <script src="./canavs2img.js"></script>
+
+
+<script type = "text/javascript" >
+
+function savePhoto() {
+    html2canvas(document.querySelector('.specific'), {
+            onrendered: function(canvas) {
+                // document.body.appendChild(canvas);
+              return Canvas2Image.saveAsPNG(canvas);
+            }
+        });
+}
+function startEyeTracking(){
+            GazeCloudAPI.StartEyeTracking();
+            ShowHeatMap();
+         }
+            
+         // var savedHeatMapCanvas;
+
+         // function StartEyeTracking(){
+         //    GazeCloudAPI.StartEyeTracking();
+         // }
+
+         // function startHeatmap(){
+         //    ShowHeatMap();
+         //    hideHeatmap();
+         // }
+
+         // function hideHeatmap(){
+         //    document.getElementById("heatmapContainerWrapper").style.visibility = 'hidden';
+         // }
+         // function showHeatmapWithoutRemoving(){
+         //    document.getElementById("heatmapContainerWrapper").style.visibility = 'visible';
+         // }
+         // function saveHeatmap(){
+         //    savedHeatMapCanvas = heatmap.getData();;
+         //    window.sessionStorage.setItem("heat", JSON.stringify(savedHeatMapCanvas));
+         //    RemoveHeatMap();
+         // }
+         // function showOldCanvas(data){
+         //    ShowHeatMap();
+         //    heatmap.setData(data);
+         // }
+      </script>
+   </head>
+
+   <body >
+      <div class="specific">
+         <div id="aa">
+            <img src="../../assets/slike/por.png">
+         </div>
+         <button  type="button" onclick="GazeCloudAPI.StartEyeTracking();ShowHeatMap();">Start</button>
+         <button  type="button" onclick="GazeCloudAPI.StopEyeTracking();">Stop</button>
+         <button type="button"  onclick="savePhoto();">Sačuvaj</button>
+       </div>
+   
+   </body>
+</html>

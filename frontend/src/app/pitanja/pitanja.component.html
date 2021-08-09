@@ -1,0 +1,11 @@
+<br><br>
+<h5>{{currentQuestion}}</h5>
+<br>
+<p *ngFor="let option of currentOptions">
+    <input
+    (click)="setUserAnswer(option.score)"
+    type="radio"
+    value={{option.score}}
+    name="answer">
+  {{option.text}}
+</p>

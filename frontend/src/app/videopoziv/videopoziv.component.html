@@ -1,0 +1,17 @@
+<div style="display: inline-flex;">
+   <div class="meni">
+      <app-glavni-meni></app-glavni-meni>
+   </div>
+   <div class="container">
+      <div class="local" style="display: flex;">
+          <video #localVideo class="localVideo" playsinline autoplay controls muted></video>
+          <button #hangupButton class="btn btn-danger hangupButton" [disabled]="hangupButtonDisabled" (click)="hangup()">Završi poziv</button>
+      </div>
+
+   <div #videos class="videos" style="display: inline-grid;"></div>
+   </div>
+  <br />
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.7.2/simplepeer.min.js "></script>
+   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+ </div>

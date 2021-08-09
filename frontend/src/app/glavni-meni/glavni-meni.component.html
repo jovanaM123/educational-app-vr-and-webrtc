@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="example-toolbar">
+	<button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
+	<h1 class="example-app-name"></h1>
+</mat-toolbar>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<img routerLink="/pocetna" src="../../assets/slike/logo1.png" width="65px" height="65px">
+		
+		<mat-nav-list>
+			<mat-list-item routerLink="/pomoc">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Pomoć</span>
+				<mat-icon mat-list-icon>help_outline</mat-icon>
+			</mat-list-item>
+			<mat-list-item routerLink="/domaci">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Domaći</span>
+				<mat-icon mat-list-icon>assignment</mat-icon>
+			</mat-list-item>
+			<mat-list-item routerLink="/predav">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Predavanja</span>
+				<mat-icon mat-list-icon>important_devices</mat-icon>
+			</mat-list-item>
+			<mat-list-item routerLink="/soba">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Konsultacije</span>
+				<mat-icon mat-list-icon>perm_camera_mic</mat-icon>
+			</mat-list-item>
+			<mat-list-item routerLink="/kursevi">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Kursevi za Vas</span>
+				<mat-icon mat-list-icon>new_releases</mat-icon>
+			</mat-list-item>
+			<mat-list-item routerLink="/test">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Odeljak za decu sa posebnim potrebama</span>
+				<mat-icon mat-list-icon>accessibility_new</mat-icon>
+			</mat-list-item>
+			<mat-list-item (click)="logout()">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Odjavi se</span>
+				<mat-icon mat-list-icon>exit_to_app</mat-icon>
+			</mat-list-item>
+		</mat-nav-list>
+	</mat-sidenav>
+
+

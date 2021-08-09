@@ -1,0 +1,29 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+        <table>
+            <thead>
+                Pridružite se predavanju
+            </thead>
+            <tr>
+                <td> <input type="text" placeholder="Ime nove sobe" [(ngModel)]="nova"> </td>
+            </tr>
+            <tr>
+                <td> <button class="btn btn-success" (click)="napravi()"> Napravi </button> </td>
+            </tr>
+            <tr>
+                <td> <input type="text" placeholder="Ime sobe" [(ngModel)]="soba"> </td>
+            </tr>
+            <tr>
+                <td> <button class="btn btn-success" (click)="pridruzi()"> Pridružite se </button> </td>
+            </tr>
+            <span style="color: brown;">
+                {{ message }}
+            </span>
+            <br/>
+        </table>
+    </div>
+         
+ </div>

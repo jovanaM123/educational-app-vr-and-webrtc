@@ -1,0 +1,30 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+      <h1>Test za utvrđivanje naznaka autizma kod deteta</h1>
+      <app-pitanja [questionIndex]="currentIndex" (score) ="receiveScore($event)"></app-pitanja>
+    <br>
+    <button class="btn-success" (click)="goNext()">Sledeće</button>
+    <br>  <br>  <br>
+             
+    <span>
+        <b>Napomena***</b>
+        Osobe koje boluju od autizma najčešće ne primećuju detalje, slike ili se pak ponašaju nezainteresovano
+        u odnosu na prikazani pojam. Povodom ove tvrdnje možete uraditi test sa Vašim
+        detetom uz pomoć alata za praćenje koji možete naći <a style="color: blue;" (click)="goTo()"> ovde. </a>
+    </span>
+    <br>  <br>
+
+    <div *ngIf="quizOver" class="border">
+        <h4>Test je gotov!</h4>
+        <br> <br>
+        <button class="btn-info" (click)="restartQuiz()">Uradi ponovo test</button>
+      </div>
+      <br>  <br>
+      <div *ngIf="ok" style="color: red;">
+       Informacije su Vam poslate na emejl adresu. 
+    </div>
+</div>
+ </div>

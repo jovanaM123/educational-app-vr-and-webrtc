@@ -1,0 +1,41 @@
+
+.localVideo{
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    float:  left !important;
+}
+
+.hangupButton {
+    margin-left: 50px  !important;
+    width: 150px  !important;
+    height: 50px  !important;
+    margin-top: 50px;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100vh;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    margin-left: 370px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        margin: auto;
+        width: 90% !important;
+    }
+    img {
+        width: 60%;
+        height: 80%;
+    }
+
+}

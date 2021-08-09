@@ -1,0 +1,20 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+
+          <video #localVideo class="localVideo" playsinline autoplay controls muted></video>
+          <video #remoteVideo playsinline autoplay controls muted></video>
+          <div>
+                <button #startButton class="btn btn-info" [disabled]="startButtonDisabled" (click)="start()">Start</button>
+                <button #callButton class="btn btn-success" [disabled]="callButtonDisabled" (click)="call()">Call</button>
+                <button #hangupButton class="btn btn-danger" [disabled]="hangupButtonDisabled" (click)="hangup()">Hang Up</button>
+          </div>
+          
+          <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+         </div>
+ </div>
+ 
+
+

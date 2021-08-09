@@ -1,0 +1,25 @@
+<div style="display: inline-flex;">
+    <div class="meni">
+       <app-glavni-meni></app-glavni-meni>
+    </div>
+     <div class="container">
+         <h3>Domaći zadaci</h3>
+         <div class="domaci" *ngFor="let dom of domaci">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title> <b> PREDMET </b> {{dom.cl}}</mat-card-title>
+                  <mat-card-subtitle>Rok za predaju: {{dom.deadline}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>
+                  {{dom.description}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button class="btn btn-warning" routerLink="/posalji">Pošalji odgovor</button>
+                </mat-card-actions>
+              </mat-card>
+              
+         </div>
+         </div>
+ </div>
